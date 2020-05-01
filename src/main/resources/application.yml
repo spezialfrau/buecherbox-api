@@ -1,0 +1,4 @@
+spring:
+  data:
+    mongodb:
+      uri: ${DATABASE_PROTOCOL:mongodb}://${DATABASE_URL:localhost}/buecher_db
