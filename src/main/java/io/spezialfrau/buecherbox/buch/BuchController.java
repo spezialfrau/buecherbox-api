@@ -30,4 +30,10 @@ public class BuchController {
         Buch b = repository.save(buch);
         return ResponseEntity.ok(b);
     }
+
+    @DeleteMapping(value = "/{buchId}")
+    public ResponseEntity deleteBuch(@PathVariable String buchId) {
+        repository.deleteById(buchId);
+        return ResponseEntity.ok(buchId);
+    }
 }

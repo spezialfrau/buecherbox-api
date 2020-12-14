@@ -1,4 +1,5 @@
 spring:
   data:
     mongodb:
-      uri: ${DATABASE_PROTOCOL:mongodb}://${DATABASE_URL:localhost}/buecher_db
+      uri: ${DATABASE_PROTOCOL:mongodb}://${DATABASE_URL:admin-user:admin-password@localhost:27017/?authSource=admin&readPreference=primary&ssl=false'}/buecher_db}
+      database: bucher_db
